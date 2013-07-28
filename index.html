@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Js-popunder : This Javascript class being used to make a popunder easier (avoid blocked by Google Chrome)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Js-popunder</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ptcong/js-popunder">View on GitHub</a>
+
+          <h1 id="project_title">Js-popunder</h1>
+          <h2 id="project_tagline">This Javascript class being used to make a popunder easier (avoid blocked by Google Chrome)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ptcong/js-popunder/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ptcong/js-popunder/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="javascript-popunder-maker" class="anchor" href="#javascript-popunder-maker"><span class="octicon octicon-link"></span></a>Javascript Popunder Maker</h1>
+
+<ul>
+<li>This Javascript class being used to make a popunder easier (avoid blocked by Google Chrome)</li>
+<li>You can make multiple windows/tabs</li>
+<li>Have more options for setting popunder</li>
+</ul><hr><ul>
+<li>Author: Phan Thanh Cong </li>
+<li>Contact: <a href="mailto:ptcong90@gmail.com">ptcong90@gmail.com</a>
+</li>
+<li>Copyright: (c) 2011 chiplove.9xpro</li>
+<li>Version: 2.0</li>
+</ul><p><strong>Note</strong>: </p>
+
+<ul>
+<li>The popunders will open all at the same time with Firefox, IE
+But in Google Chrome, i have been try to avoid blocked by Chrome popunder-blocker therefore the popunders will be open in order clicked</li>
+<li>Default: popunder work for session of browser, but you can change it by <code>cookieExpires</code> options</li>
+</ul><h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<h4>
+<a name="main-options" class="anchor" href="#main-options"><span class="octicon octicon-link"></span></a>Main Options</h4>
+
+<ul>
+<li>'onNewTab' <code>true</code> or <code>false</code> default: <code>true</code>, this decide the popunder will open at the newtab or new window</li>
+<li>'eventType' <code>1</code> or <code>2</code> - default: <code>1</code> (window onclick), <code>2</code> (document.body onclick)</li>
+<li>'cookieExpires' type float, day of cookie (if not set, popup will work by session), you can use <code>0.5</code> for 12 hours</li>
+<li>'alwaysPop' <code>true</code> or <code>false</code> - default: <code>false</code>, if <code>true</code>, refresh = new popunder</li>
+</ul><h4>
+<a name="other-options" class="anchor" href="#other-options"><span class="octicon octicon-link"></span></a>Other Options</h4>
+
+<p>There are all defaul options of popunder (if onNewTab = false)</p>
+
+<ul>
+<li>width:        window.screen.width,</li>
+<li>height:   window.screen.height,</li>
+<li>left:     0,</li>
+<li>top:      0,</li>
+<li>location: 1,</li>
+<li>tollbar:  1,</li>
+<li>status:   1,</li>
+<li>menubar:  1,</li>
+<li>scrollbars:   1,</li>
+<li>resizable:    1</li>
+</ul><h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<pre><code>&lt;script type="text/javascript" src="popup.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+// make pop at the new tab
+Light.Popup.create('site1.com', {onNewTab: true});
+// make pop on new window with size 100x100
+Light.Popup.create('site1.com', {width: 100, height: 100, onNewTab: false});
+// refresh = new popup
+Light.Popup.create('site3.com', {alwaysPop: true});
+&lt;/script&gt;
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Js-popunder maintained by <a href="https://github.com/ptcong">ptcong</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
