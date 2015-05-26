@@ -1,5 +1,5 @@
 /**
- * Smart Popunder maker.
+ 
  * This class provides an easy way to make a popunder.
  * Avoid blocked on Google Chrome
  *
